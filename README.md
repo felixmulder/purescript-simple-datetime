@@ -3,6 +3,11 @@
 
 A simplified version of DateTime
 
+## Installation
+```bash
+$ bower install purescript-simple-datetime --save
+```
+
 ## Parsing a date
 If your date is on the format `"YYYY-MM-DDTHH:mm:ss.SSSZ"` then you can simply do:
 
