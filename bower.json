@@ -1,5 +1,6 @@
 {
   "name": "purescript-simple-date",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
