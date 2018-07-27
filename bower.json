@@ -1,0 +1,19 @@
+{
+  "name": "purescript-simple-date",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^4.1.0",
+    "purescript-console": "^4.1.0",
+    "purescript-effect": "^2.0.0",
+    "purescript-js-date": "^6.0.0",
+    "purescript-formatters": "^4.0.0"
+  },
+  "devDependencies": {
+    "purescript-spec": "^3.0.0"
+  }
+}
