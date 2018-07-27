@@ -1,2 +1,35 @@
-# purescript-simple-date
-A simplified version of Date
+# purescript-simple-datetime
+A simplified version of DateTime
+
+## Parsing a date
+```purescript
+import Data.SimpleDateTime
+import Data.SimpleDateTime as SDT
+import Effect.Exception (Error)
+
+parsedDate :: Either Error SimpleDateTime
+parsedDate = SDT.parse "2018-07-27T16:20:38.469"
+```
+
+## Using `SimpleDateTime`
+Standard functions for getting the time, date, day of the week etc all exist on
+this simple type:
+
+```purescript
+hours :: SimpleDateTime -> Int
+hours = SDT.getHours
+
+minutes :: SimpleDateTime -> Int
+minutes = SDT.getMinutes
+```
+
+## Parsing from a custom format
+Parsing from your own format, let's say: `"YYYY-MM-DD"` is as simple as:
+
+```purescript
+format :: SDT.DateFormat
+format = SDT.DateFormat "YYYY-MM-DD"
+
+parsedDate :: Either Error SimpleDateTime
+parsedDate = SDT.parseFormat format "2018-01-14"
+```
