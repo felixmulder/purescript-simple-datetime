@@ -17,7 +17,7 @@ import Data.SimpleDateTime as SDT
 import Effect.Exception (Error)
 
 parsedDate :: Either Error SimpleDateTime
-parsedDate = SDT.parse "2018-07-27T16:20:38.469"
+parsedDate = SDT.parse "2018-07-27T16:20:38.469Z"
 ```
 ## Parsing from a custom format
 Parsing from your own format, let's say: `"YYYY-MM-DD"` is as simple as:
