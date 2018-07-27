@@ -1,5 +1,6 @@
 # purescript-simple-datetime
 [![Build status](https://travis-ci.org/felixmulder/purescript-simple-datetime.svg?branch=master)](https://travis-ci.org/felixmulder/purescript-simple-datetime)
+[![Pursuit](http://pursuit.purescript.org/packages/purescript-simple-datetime/badge)](http://pursuit.purescript.org/packages/purescript-simple-datetime/)
 
 A simplified version of DateTime
 
