@@ -1,7 +1,7 @@
 language: node_js
-dist: trusty
 sudo: required
-node_js: stable
+dist: trusty
+node_js: 8
 env:
   - PATH=$HOME/purescript:$PATH
 install:
@@ -9,10 +9,8 @@ install:
   - wget -O $HOME/purescript.tar.gz https://github.com/purescript/purescript/releases/download/$TAG/linux64.tar.gz
   - tar -xvf $HOME/purescript.tar.gz -C $HOME/
   - chmod a+x $HOME/purescript
-  - npm install -g bower
+  - npm install -g bower pulp
   - npm install
   - bower install
 script:
-  - npm run -s build
-after_success:
   - pulp test
